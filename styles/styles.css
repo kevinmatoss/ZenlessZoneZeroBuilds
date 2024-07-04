@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza os cards horizontalmente */
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px; /* espaçamento acima do container */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: #444;
+    border-radius: 20px; /* ajustei para 20px para combinar com o estilo */
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    padding: 10px 0; /* ajustei o padding para melhorar a legibilidade */
+    font-weight: bold;
+    font-size: 18px; /* aumentei o tamanho da fonte */
+    color: #fff;
+}
+
+.character-info {
+    display: flex;
+    flex-direction: column ;
+    align-items: center; /* centraliza o conteúdo verticalmente */
+    background-color: #444;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 20px auto; /* espaçamento do container centralizado */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-stats {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around; /* distribui os stats igualmente */
+    width: 100%; /* garante que ocupa toda a largura disponível */
+}
+
+.character-image {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center; /* centraliza a imagem horizontalmente */
+    width: 420px;   
+}
+
+.character-image img {
+    max-width: 100%;
+    height: auto; /* mantém a proporção da imagem */
+    border-radius: 140px; /* adiciona borda arredondada na imagem */
+}
+
+.character-tabs {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* centraliza os botões horizontalmente */
+    margin-top: 10px; /* espaçamento acima dos botões */
+}
+
+.character-tabs button {
+    padding: 10px 20px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.character-tabs button:hover {
+    background-color: #666;
+}
